@@ -1,6 +1,6 @@
 # Aguasto Go SDK and CLI
 
-Official standalone client for https://www.aguasto.com/developers. Go 1.22 or newer; standard library only. Source: https://github.com/Altssdata/aguasto-agents.
+Official standalone client for https://www.aguasto.com/developers. Go 1.22 or newer; standard library only. Source: https://github.com/aguasto-ai/aguasto-agents.
 
 ```sh
 go get github.com/Altssdata/aguasto-agents/go@v1.0.0

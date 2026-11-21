@@ -6,7 +6,7 @@
   "homepage": "https://www.aguasto.com/developers",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Altssdata/aguasto-agents.git",
+    "url": "git+https://github.com/aguasto-ai/aguasto-agents.git",
     "directory": "javascript"
   },
   "author": "Aguasto",
