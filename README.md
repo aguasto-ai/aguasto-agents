@@ -27,17 +27,19 @@ With Node.js 22 or newer, run `node javascript/cli.mjs --help` or `node javascri
 
 Install the reviewed research and calculation skills with:
 
-`npx skills add Altssdata/aguasto-agents --skill aguasto-research aguasto-calculations`
+`npx skills add aguasto-ai/aguasto-agents --skill aguasto-research aguasto-calculations`
 
-Public directory pages: [research](https://skills.sh/altssdata/aguasto-agents/aguasto-research) and [calculations](https://skills.sh/altssdata/aguasto-agents/aguasto-calculations). An installation test verifies compatibility; it is not a claim of organic adoption or endorsement.
+Public directory pages: [research](https://skills.sh/aguasto-ai/aguasto-agents/aguasto-research) and [calculations](https://skills.sh/aguasto-ai/aguasto-agents/aguasto-calculations). An installation test verifies compatibility; it is not a claim of organic adoption or endorsement.
 
-For synthetic fixture searches and expected-error checks, install `npx skills add Altssdata/aguasto-agents --skill aguasto-integration-testing`. See the [integration testing skill](https://skills.sh/altssdata/aguasto-agents/aguasto-integration-testing) and [sandbox guide](https://www.aguasto.com/sandbox).
+For synthetic fixture searches and expected-error checks, install `npx skills add aguasto-ai/aguasto-agents --skill aguasto-integration-testing`. See the [integration testing skill](https://skills.sh/aguasto-ai/aguasto-agents/aguasto-integration-testing) and [sandbox guide](https://www.aguasto.com/sandbox).
 
 ## Homebrew
 
-`brew tap altssdata/aguasto-agents https://github.com/Altssdata/aguasto-agents`
+`brew tap aguasto-ai/aguasto-agents https://github.com/aguasto-ai/aguasto-agents`
 
-`brew install altssdata/aguasto-agents/aguasto-research`
+`brew install aguasto-ai/aguasto-agents/aguasto-research`
+
+Existing Homebrew taps and the published Go v1 module path continue to work.
 
 The formula installs the SHA-256-pinned JavaScript source release and its Node.js dependency. Run `aguasto-research fixtures` for an offline check.
 

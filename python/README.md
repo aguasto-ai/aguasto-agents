@@ -1,6 +1,6 @@
 # Aguasto research client for Python
 
-Official Aguasto client from https://www.aguasto.com/developers. Published on PyPI as [aguasto-research](https://pypi.org/project/aguasto-research/), with public source at https://github.com/Altssdata/aguasto-agents/tree/main/python.
+Official Aguasto client from https://www.aguasto.com/developers. Published on PyPI as [aguasto-research](https://pypi.org/project/aguasto-research/), with public source at https://github.com/aguasto-ai/aguasto-agents/tree/main/python.
 
 With Python 3.10 or newer, install in your project's virtual environment with `python -m pip install aguasto-research==1.0.1`. You can also install the developer-page source archive with `python -m pip install ./aguasto-research-python.tar.gz` (a local Python packaging environment is required).
 

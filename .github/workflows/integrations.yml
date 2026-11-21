@@ -37,6 +37,11 @@ jobs:
           go vet ./...
           go run ./cmd/aguasto-research fixtures
   homebrew:
+    strategy:
+      matrix:
+        tap:
+          - { name: aguasto-ai/aguasto-agents, url: 'https://github.com/aguasto-ai/aguasto-agents' }
+          - { name: altssdata/aguasto-agents, url: 'https://github.com/Altssdata/aguasto-agents' }
     runs-on: macos-latest
     env:
       HOMEBREW_NO_AUTO_UPDATE: "1"
@@ -46,9 +51,9 @@ jobs:
           persist-credentials: false
       - run: ruby -c Formula/aguasto-research.rb
       - run: |
-          brew tap altssdata/aguasto-agents https://github.com/Altssdata/aguasto-agents
-          mkdir -p "$(brew --repo altssdata/aguasto-agents)/Formula"
-          cp Formula/aguasto-research.rb "$(brew --repo altssdata/aguasto-agents)/Formula/aguasto-research.rb"
-          brew install altssdata/aguasto-agents/aguasto-research
-      - run: brew test altssdata/aguasto-agents/aguasto-research
+          brew tap ${{ matrix.tap.name }} ${{ matrix.tap.url }}
+          mkdir -p "$(brew --repo ${{ matrix.tap.name }})/Formula"
+          cp Formula/aguasto-research.rb "$(brew --repo ${{ matrix.tap.name }})/Formula/aguasto-research.rb"
+          brew install ${{ matrix.tap.name }}/aguasto-research
+      - run: brew test ${{ matrix.tap.name }}/aguasto-research
       - run: aguasto-research --help

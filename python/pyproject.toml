@@ -14,7 +14,7 @@ license = {text = "All rights reserved."}
 [project.urls]
 Homepage = "https://www.aguasto.com/developers"
 Documentation = "https://www.aguasto.com/openapi.json"
-Source = "https://github.com/Altssdata/aguasto-agents/tree/main/python"
+Source = "https://github.com/aguasto-ai/aguasto-agents/tree/main/python"
 
 [project.scripts]
 aguasto-research = "aguasto_research.__main__:main"
